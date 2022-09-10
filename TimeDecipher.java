@@ -11,7 +11,6 @@ public class TimeDecipher {
 		choice = console.nextInt();
 			
 			if (choice == 1) {
-		
 				// Determines the minutes and seconds left for large numbers over 60 seconds
 				System.out.print("Enter an integer for seconds: ");
 				int seconds = console.nextInt();
@@ -22,7 +21,6 @@ public class TimeDecipher {
 			}
 			
 			else if (choice == 2) {
-				
 				// Determine the modular remainder of the number entered  
 				System.out.println("What is the sum of: ");
 				int sum = console.nextInt();
@@ -33,7 +31,6 @@ public class TimeDecipher {
 			}
 			
 			else if (choice == 3) {
-				
 				// More advanced use of Array to determine day of the week + 100 = day of week
 				System.out.println("What will be the day in 100 days, today is: ");
 				String day = console.next();
@@ -43,9 +40,10 @@ public class TimeDecipher {
 				System.out.println(newDay);
 				String[] week = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 				System.out.println("New week day will be " + week[newDay]);
-				}
+			}
 			
 			else if (choice == 4) {
+				// Operations program
 				System.out.println(2 * (5 / 2 + 5 / 2));
 				System.out.println(2 * 5 / 2 + 2 * 5 / 2);
 				System.out.println(2 * (5 / 2));
@@ -69,6 +67,7 @@ public class TimeDecipher {
 			}
 			
 			else if (choice == 6) {
+				// Even, positive and both program (Homework 1)
 				System.out.println("This is a Even And Positive Homework \n _____________________ \n\n" 
 				+ "Please enter an integer number:");
 				int input = console.nextInt();
@@ -89,17 +88,19 @@ public class TimeDecipher {
 						+ input + " is an even number: " + even + "\n"
 						+ input + " is a positive number: "	+ positive + "\n" 
 						+ input + " is a positive even number: " + both);	
-				}
+			}
 			
 			else if (choice == 7) {
+				// Min and Max random number generator
 				System.out.println("Choose a min and max intenger:");
 				int min = console.nextInt();
 				int max = console.nextInt();
 				double operation = Math.random() * (max - min) + min;
 				System.out.println((int)operation);
-				}
+			}
 			
 			else if (choice == 8) {
+				// Circle area = pi * r^2
 				System.out.println("Choose a radius: ");
 				int radius = console.nextInt();
 				double radiusD = (double)radius;
@@ -108,20 +109,34 @@ public class TimeDecipher {
 			}
 			
 			else if (choice == 9) {
-				// Obtain the total milliseconds since midnight, Jan 1, 1970
-				long totalMilliseconds = System.currentTimeMillis();
+				// Obtain the total milliseconds since midnight, Jan 1, 1970 - 1203183068328
+				long totalMilliseconds = System.currentTimeMillis(); 
 				
-				// Obtain the total seconds since midnight, Jan 1, 1970
+				// Obtain the total seconds since midnight, Jan 1, 1970 - 1203183068
 				long totalSeconds = totalMilliseconds / 1000;
 				
-				// Compute the current second in the minute in the hour
+				// Compute the current second in the minute in the hour - 8
 				long currentSecond = totalSeconds % 60;
 				
-				// Obtain the total minutes
+				// Obtain the total minutes - 20053051
 				long totalMinutes = totalSeconds / 60;
 				
-				// Compute the current minute in the hour
+				// Compute the current minute in the hour - 31
 				long currentMinute = totalMinutes % 60;
+				
+				// Obtain the total hours - 334217
+				long totalHours = totalMinutes / 60;
+				
+				// Compute the current hour - 17
+				long currentHour = totalHours % 24;
+				
+				// Display results
+				System.out.println("Current time is " + currentHour + ":"
+						+ currentMinute + ":" + currentSecond + " GMT");
+			}
+			
+			else if (choice == 10) {
+				// ++var . var++ . --var . var--
 			}
 		}
 	}
