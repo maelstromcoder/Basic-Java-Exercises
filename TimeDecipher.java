@@ -329,75 +329,7 @@ public class TimeDecipher {
 			    System.out.println("	dime " + Digit4);
 			    System.out.println("	nickel " + Digit5);
 			    
-				/*  final int money1 =    2000;
-				    final int money2 =    1000;
-				    final int money3 =     500;
-				    final int money4 =     200;
-				    final int money5 =     100;
-				    final int money6 =      25;
-				    final int money7 =      10;
-				    final int money8 =       5;
-				    float money;
-				    
-				    System.out.println("Amount received: 400");
-				    System.out.println("Cost of the item: 215");
-				    System.out.println("Required change: 185");
-				    
-				    // System.out.println("Please enter the amount of money: ");
-	                // money = console.nextFloat();
-	                float dollar1 = 400;
-	                float dollar2 = 215;
-	                float dollar3 = 185;
-	                money = dollar3;
-				    money *= 100;
-	                System.out.println(money);
-	                int Digit1 = (int) (money / money1);
-	                money = money % money1;
-	                int Digit2 = (int) (money / money2);
-	                money = money % money2;
-	                int Digit3 = (int) (money / money3);
-	                money = money % money3;
-	                int Digit4 = (int) (money / money4);
-	                money = money % money4;
-	                int Digit5 = (int) (money / money5);
-	                money = money % money5;
-	                int Digit6 = (int) (money / money6);
-	                money = money % money6;
-	                int Digit7 = (int) (money / money7);
-	                money = money % money7;
-	                int Digit8 = (int) (money / money8);
-	                money = money % money8;
-	            
-	                System.out.println("You will receive " + Digit1 + " bills of 20$.");
-	                System.out.println("You will receive " + Digit2 + " bills of 10$.");
-	                System.out.println("You will receive " + Digit3 + " bills of 5$.");
-	                System.out.println("You will receive " + Digit4 + " bills of 2$.");
-	                System.out.println("You will receive " + Digit5 + " bills of 1$.");
-	                System.out.println("You will receive " + Digit6 + " coins of 25 cents.");
-	                System.out.println("You will receive " + Digit7 + " coins of 10 cents.");       
-	                System.out.println("You will receive " + Digit8 + " coins of 5 cents.");
 				
-				System.out.println("Amount received is: 400");
-				System.out.println("Cost of the item: 215");
-				System.out.println("Required change: 185");
-				int receive = 400;
-				int cost = 215;
-				int change = 185;
-				
-				int toonie = change / 200;
-				change -= toonie * 200;
-				int loonie = change / 100;
-				change -= loonie * 100;
-				int quarter = change / 25;
-				change -= quarter * 25;
-				int dime = change / 10;
-				change -= dime * 10;
-				int nickel = change / 5;
-				change -= nickel * 5;
-				
-				
-				System.out.println("You will have " + toonie + " toonies, " + loonie+ " loonies, "
-						+ quarter+ " quarters, " + dime+ " dimes, " + nickel+ " nickels."); */
 			}
 			
 			else if (choice == 18) {			    
